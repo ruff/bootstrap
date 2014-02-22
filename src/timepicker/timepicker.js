@@ -26,7 +26,7 @@ angular.module('ui.bootstrap.timepicker', [])
       this.setupMousewheelEvents( hoursInputEl, minutesInputEl );
     }
 
-    $scope.readonlyInput = angular.isDefined($attrs.readonlyInput) ? scope.$parent.$eval($attrs.readonlyInput) : timepickerConfig.readonlyInput;
+    $scope.readonlyInput = angular.isDefined($attrs.readonlyInput) ? $scope.$parent.$eval($attrs.readonlyInput) : timepickerConfig.readonlyInput;
     this.setupInputEvents( hoursInputEl, minutesInputEl );
   };
 
